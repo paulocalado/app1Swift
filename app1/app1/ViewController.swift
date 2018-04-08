@@ -11,9 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var dogAge: UITextField!
+    
     
     @IBAction func findAge(_ sender: Any) {
-        resultLabel.text = "Button Pressed  "
+        let humanYears = Int(dogAge.text!)! * 7
+        resultLabel.text = "A idade em humanos é: "+String(humanYears)
     }
     
     
